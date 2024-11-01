@@ -14,7 +14,7 @@ const Home = () => {
       const userId = localStorage.getItem('userId');
       console.log(userId)
       // Send request to backend
-      const response = await axios.post('http://localhost:5000/api/playlist', {
+      const response = await axios.post('https://yt-1-a3d9.onrender.com/api/playlist', {
         playlistName,
         youtubeLink,
         userId // Send the userId along with the request

@@ -21,7 +21,7 @@ const ViewPlaylists = () => {
         const fetchPlaylists = async () => {
             const userId = localStorage.getItem('userId'); // Get userId from local storage
             try {
-                const response = await fetch(`http://localhost:5000/api/playlist/user/${userId}`);
+                const response = await fetch(`https://yt-1-a3d9.onrender.com/api/playlist/user/${userId}`);
                 if (!response.ok) {
                     throw new Error(`Error fetching playlists: ${response.statusText}`);
                 }
